@@ -1,0 +1,17 @@
+Create a table student with appropriate fields and insert values into it.Display the number of records in that table and also display the distinct records of it
+
+create  database guvi;
+use guvi;
+create table student(
+    full_name       varchar(20) not null,
+    email_address   varchar(10)not null,
+    age int,
+    qualification varchar(20) not null
+    );
+     
+INSERT INTO student values('nandy','nandymaha',17, '+2');
+INSERT INTO student values('jill','mfdd',20,  'B.E');
+INSERT INTO student values('monkey','mdgfhh',16, '+1');
+INSERT INTO student values('nandy','nandymaha',17, '+2');
+select * from student;
+select distinct(age) from student;
