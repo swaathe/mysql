@@ -1,0 +1,17 @@
+Create the table 'Employee' with the Fields ID , NAME , AGE and Assign AUTOINCREMENT to the field ID\
+
+
+
+
+create table employee(
+	    ID int not null primary key AUTO_INCREMENT,
+	    name varchar(20) not null,
+	    age int not null
+	    
+	    );
+	    
+INSERT INTO employee(name ,age) VALUES('motu',20);
+INSERT INTO employee(name, age) VALUES('Bali', 25);
+INSERT INTO employee(name, age) VALUES('dummy'  ,25);
+	
+select * from employee;
