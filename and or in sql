@@ -1,0 +1,34 @@
+Consider the table Student.
+
+ID	NAME	AGE
+1	Vinodini	25
+2	Banu    	27
+3	kaushik 	23
+4	Praveen 	25
+5	Kamal   	22
+6	Malini  	24
+7	Ramesh  	32
+Display the record(s) who is of age 32 or 22
+
+
+
+ans
+
+create table student(
+    ID int not null,
+    name varchar(20) not null,
+    age int not null
+    
+    );
+insert into student values(1, 'vinodini',25);
+insert into student values(2, 'banu',27);
+insert into student values(3, 'kaushik',23);
+insert into student values(4, 'praveen',25);
+insert into student values(5, 'kamal',22);
+insert into student values(6, 'malini',24);
+insert into student values(7, 'ramesh',32);
+
+
+select  *  from student where age = '32' or age = '22';
+
+
