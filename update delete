@@ -1,0 +1,35 @@
+Consider the given table Employee
+
+ID	NAME	AGE	ADDRESS	SALARY
+1	Ramesh	32	Ahmedabad	2000
+2	Khilan	25	Delhi    	1500
+3	kaushik	23	Kota     	2000
+4	Chaitali	25	Mumbai   	6500
+5	Hardik	27	Bhopal   	8500
+6	Komal	22	MP       	4500
+7	Muffy	24	Indore   	10000
+ 
+
+Update the address of Komal to "Maharashtra".", 
+
+
+ans:
+
+
+create table employee(
+    ID int not null,
+    name varchar(20) not null,
+    age int not null,
+    address varchar(100) not null,
+    salary int not null
+    );
+insert into employee values(1, 'ramesh',32, 'ahmedabad', 2000);
+insert into employee values(2, 'khilan',25, 'delhi', 1500);
+insert into employee values(3, 'kaushik',23, 'kota', 2000);
+insert into employee values(4, 'chaitali',25, 'mumbai', 6500);
+insert into employee values(5, 'hardik',27, 'bhopal', 8500);
+insert into employee values(6, 'komal',22, 'mp', 4500);
+insert into employee values(7, 'muffy',24, 'indore', 10000);
+
+update employee set address='maharastra' where name='komal';
+select * from employee;
